@@ -52,10 +52,9 @@ with NetworkManager and the GNOME desktop.
 
 %files -f NetworkManager-openswan.lang
 %doc AUTHORS ChangeLog README
-%{_libdir}/NetworkManager/libnm-openswan-properties.so
-%{_libexecdir}/nm-openswan-auth-dialog
-%{_libexecdir}/nm-openswan-service
-%{_libexecdir}/nm-openswan-service-openswan-helper
 %config(noreplace) %{_sysconfdir}/dbus-1/system.d/nm-openswan-service.conf
 %config(noreplace) %{_sysconfdir}/NetworkManager/VPN/nm-openswan-service.name
+%{_libexecdir}/nm-openswan-auth-dialog
+%{_libexecdir}/nm-openswan-service
 %{_datadir}/gnome-swan-properties/openswan/nm-openswan-dialog.ui
+
