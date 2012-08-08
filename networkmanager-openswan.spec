@@ -51,6 +51,9 @@ with NetworkManager and the GNOME desktop.
 %doc AUTHORS ChangeLog README
 %config(noreplace) %{_sysconfdir}/dbus-1/system.d/nm-openswan-service.conf
 %config(noreplace) %{_sysconfdir}/NetworkManager/VPN/nm-openswan-service.name
+%{_libdir}/NetworkManager/libnm-openswan-properties.so
 %{_libexecdir}/nm-openswan-auth-dialog
 %{_libexecdir}/nm-openswan-service
+%{_libexecdir}/nm-openswan-service-helper
+%{_datadir}//gnome-vpn-properties/openswan/nm-openswan-dialog.ui
 
