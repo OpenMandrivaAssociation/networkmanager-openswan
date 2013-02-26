@@ -1,11 +1,13 @@
+%define url_ver %(echo %{version}|cut -d. -f1,2)
+
 Summary:	NetworkManager VPN integration for OpenSWAN
 Name:		networkmanager-openswan
-Version:	0.9.6.0
+Version:	0.9.8.0
 Release:	1
 License:	GPLv2+
 Group:		System/Base
-URL:		http://www.gnome.org/projects/NetworkManager/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/NetworkManager-openswan/NetworkManager-openswan-%{version}.tar.xz
+Url:		http://www.gnome.org/projects/NetworkManager/
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/NetworkManager-openswan/%{url_ver}/NetworkManager-openswan-%{version}.tar.xz
 
 BuildRequires:	gettext
 BuildRequires:	gnome-common
@@ -13,19 +15,19 @@ BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl
-BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(dbus-1)
+BuildRequires:	pkgconfig(gconf-2.0)
+BuildRequires:	pkgconfig(gnome-keyring-1)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libnm-util)
 BuildRequires:	pkgconfig(libnm-glib)
 BuildRequires:	pkgconfig(libnm-glib-vpn)
-BuildRequires:	pkgconfig(gconf-2.0)
-BuildRequires:	pkgconfig(gnome-keyring-1)
-Requires:	gtk+3
 Requires:	dbus
-Requires:	NetworkManager
-Requires:	shared-mime-info
 Requires:	GConf2
 Requires:	gnome-keyring
+Requires:	gtk+3
+Requires:	NetworkManager
+Requires:	shared-mime-info
 
 %description
 This package contains software for integrating the OpenSWAN IPSec VPN software
