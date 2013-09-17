@@ -1,2 +1,4 @@
+removed_sources:
+  NetworkManager-openswan-0.9.8.0.tar.xz: bd57420bca83ebedfd9e37425688f7a51a0ccc31
 sources:
-  "NetworkManager-openswan-0.9.8.0.tar.xz": bd57420bca83ebedfd9e37425688f7a51a0ccc31
+  NetworkManager-openswan-0.9.8.4.tar.xz: 01b622d39617f326a9e4090c2c3198e34b1e59bc

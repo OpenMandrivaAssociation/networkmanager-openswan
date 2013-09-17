@@ -2,7 +2,7 @@
 
 Summary:	NetworkManager VPN integration for OpenSWAN
 Name:		networkmanager-openswan
-Version:	0.9.8.0
+Version:	0.9.8.4
 Release:	1
 License:	GPLv2+
 Group:		System/Base
