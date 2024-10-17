@@ -6,7 +6,7 @@ Version:	1.0.8
 Release:	ZED'S DEAD
 License:	GPLv2+
 Group:		System/Base
-Url:		http://www.gnome.org/projects/NetworkManager/
+Url:		https://www.gnome.org/projects/NetworkManager/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/NetworkManager-openswan/%{url_ver}/NetworkManager-openswan-%{version}.tar.xz
 
 BuildRequires:	gettext
